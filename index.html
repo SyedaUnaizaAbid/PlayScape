@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayScape - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="main-head">
+        <div class="logo">
+            <img src="images/pic1.webp" alt="PlayScape Logo" />
+            <h2>PlayScape</h2>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="game.html">Games</a>
+            <a href="about.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>PlayScape</span></h1>
+            <p>Discover exciting browser games that bring joy, challenge, and fun to every player. Join our community
+                and play anytime, anywhere!</p>
+            <a href="game.html" class="cta-btn">Explore Games</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose PlayScape?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="https://img.icons8.com/ios-filled/50/1abc9c/controller.png" alt="Fun Games" />
+                <h3>Fun & Addictive Games</h3>
+                <p>Enjoy a wide variety of free games — from puzzles to adventures, all in your browser!</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/ios-filled/50/1abc9c/user-group-man-man.png" alt="Community Icon">
+                <h3>Vibrant Community</h3>
+                <p>Connect with gamers worldwide, share scores, and make new friends in the PlayScape world.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/ios-filled/50/1abc9c/lightning-bolt.png" alt="Instant Play" />
+                <h3>Instant Play</h3>
+                <p>No downloads, no installs — just pure gaming fun right from your browser!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Games Section -->
+    <section class="highlight">
+        <h2>Popular Games</h2>
+        <div class="highlight-grid">
+            <div class="highlight-card">
+                <img src="https://repository-images.githubusercontent.com/278151764/1e7a9400-c20b-11ea-8c51-5e89a3204f18"
+                    alt="Hangman" />
+                <h3>Hangman</h3>
+            </div>
+            <div class="highlight-card">
+                <img src="https://nikles.it/wp-content/uploads/2020/01/ezgif.com-optimize-1.gif" alt="Block Game" />
+                <h3>Block Game</h3>
+            </div>
+            <div class="highlight-card">
+                <img src="https://raw.githubusercontent.com/alessbn/snake-game/master/screenshot.gif"
+                    alt="Snake Game" />
+                <h3>Snake Game</h3>
+            </div>
+        </div>
+        <div class="more-btn-container">
+            <a href="game.html" class="cta-btn">Play More Games</a>
+        </div>
+    </section>
+
+    <!-- Newsletter / Updates Section -->
+    <section class="newsletter">
+        <h2>Stay Updated!</h2>
+        <p>Get the latest PlayScape game releases, events, and updates directly to your inbox.</p>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email..." required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- 1. About Section -->
+            <div class="footer-section">
+                <h4>PlayScape</h4>
+                <p>
+                    PlayScape is your ultimate destination for fun, addictive, and exciting online games.
+                    Join our community and enjoy browser-based games with players from around the world.
+                </p>
+            </div>
+
+            <!-- 2. Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="game.html">Games</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- 3. Contact Info -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@PlayScape.com</p>
+                <p>Phone: +92 300 1234567</p>
+                <p>Address: 123 Player Street, Karachi, Pakistan</p>
+            </div>
+
+            <!-- 4. Follow Us -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook-new.png" /></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" /></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" /></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/discord-logo.png" /></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>© 2025 PlayScape. All Rights Reserved. Designed with ❤️ by the PlayScape Team.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("newsletterForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = document.getElementById("newsletterEmail").value;
+            alert(`🎮 Thanks for subscribing, ${email}! Stay tuned for new game updates.`);
+            this.reset();
+        });
+    </script>
+
+</body>
+
+</html>
