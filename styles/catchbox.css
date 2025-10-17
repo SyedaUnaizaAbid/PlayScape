@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#startScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#startScreen h2 {
+    margin-bottom: 20px;
+}
+
+#gameArea {
+    margin: auto;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 3px solid #fff;
+    background: #333;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    height: 20px;
+    background: lime;
+    border-radius: 5px;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 3px;
+}
+
+#score,
+#highScore {
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+#highScore {
+    color: cyan;
+}
+
+#controls {
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background: lime;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#gameOver {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+}
