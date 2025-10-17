@@ -125,4 +125,3 @@ pauseBtn.addEventListener("click", function () {
 // ---------------- Game Loop -----------------
 setInterval(createBox, 1500);
 setInterval(updateGame, 50);
-
